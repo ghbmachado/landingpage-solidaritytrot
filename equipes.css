@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-url: url(assets/bg-desktop.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --text-color: white;
+  --switch-bg-url: url(assets/moon-stars.svg);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --bg-initial: #0e1828;
+}
+
+.light {
+  --bg-url: url(assets/bg-desktop-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.01);
+  --text-color: black;
+  --switch-bg-url: url(assets/sun.svg);
+  --highlight-color: rgba(0, 0, 0, 0.2);
+  --bg-initial: #e3fbff;
+}
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 500px;
+  height: 712px;
+  margin: 50px auto 0px;
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+}
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+}
+
+#container ul li a {
+  display: flex;
+  border: 1px solid var(--stroke-color);
+  align-items: center; /* alinha em relação a vertical */
+  justify-content: center; /* alinha em relação a horizontal */
+  padding: 16px 24px; /* 16px top e bottom 24px right e left */
+  background: var(--surface-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+#container ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1px solid white;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 0px;
+  font-size: 24px;
+}
+
+#social-links a {
+  padding: 16px;
+  border-radius: 50px;
+  transition: background 2s;
+}
+
+#social-links a:hover {
+  background: var(--realce-color);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+#switch {
+  /*  border: 1px solid red; */
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+
+  left: 0; /* vai ficar à esquerda */
+  z-index: 1; /* colocamos o botão em uma camada acima */
+  transform: translateY(-50%); /* deslocando no eixo y de 50% para cima*/
+}
+
+/* vai ficar à direita quando tiver a class light */
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  border: 1px solid var(--stroke-color);
+  display: block; /* troca de inline para block */
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border-radius: 9999px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+td,
+th {
+  padding: 5px;
+  border: 1px solid black;
+}
+#initialpage a {
+  display: inline;
+  text-align: center;
+  padding: 8px;
+  border-radius: 20px;
+  background: var(--bg-initial);
+  color: var(--text-color);
+  border: 2px solid var(--highlight-color);
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#initialpage a:hover {
+  font-size: 13.5px;
+}
