@@ -4,7 +4,7 @@
 
 ## About the project
 
-This project is about the creation of a landing page for Trote Solidário, an initiative that seeks to encourage the integration between university freshmen and seniors through social actions. The landing page aims to disseminate information about the Solidarity Hazing and, in addition, the site also has a functional calculator to account for the verification of the teams against the food collected by them during the Solidarity Hazing. The calculator will help with organization and healthy competition between teams, further encouraging student participation in social action.
+This project deals with the creation of a landing page for Trote Solidário and a collective project that seeks to encourage integration between freshmen and university graduates through social actions. The landing page aims to disseminate information about the Solidarity Trot and, in addition, the site also has a functional calculator to calculate the calculation of the teams against the food collected by them during the Solidarity Trot. The calculator will help in the organization and healthy competition between teams, further encouraging student participation in social actions.
 
 ## Who is Uni-FACEF
 The Centro Universitário Municipal de Franca, Uni-FACEF, is a Brazilian public higher education institution, located in the city of Franca, São Paulo, as it is conducted by the municipality as an autarchy.
